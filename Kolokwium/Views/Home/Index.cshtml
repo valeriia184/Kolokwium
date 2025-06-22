@@ -1,8 +1,28 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Kolokwium API";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div style="max-width: 800px; margin: auto; padding: 2rem; font-family: sans-serif;">
+    <h1 style="color: #3443F7;">🎨 Kolokwium – Galeria i Wystawy API</h1>
+
+    <p>Witamy w aplikacji WebAPI stworzonej w ramach kolokwium APBD 2025.</p>
+
+    <h2>Dostępne endpointy:</h2>
+    <ul style="line-height: 1.8;">
+        <li>
+            <strong>GET</strong> 
+            <code>/api/galleries/{id}/exhibitions</code><br/>
+            Zwraca galerię i wystawy wraz z dziełami i artystami.
+        </li>
+        <li>
+            <strong>POST</strong> 
+            <code>/api/exhibitions</code><br/>
+            Dodaje nową wystawę z przypisanymi dziełami sztuki.
+        </li>
+    </ul>
+
+    <p style="margin-top: 2rem; color: #888;">
+        Autor: Valeriia Ternopilska<br/>
+        Projekt ASP.NET Core + EF Core (Code First)
+    </p>
 </div>
